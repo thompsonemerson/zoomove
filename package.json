@@ -7,10 +7,6 @@
   "repository": "https://github.com/thompsonemerson/zoomove",
   "author": "Emerson Thompson <thompson.emerson@gmail.com>",
   "license": "http://thompsonemerson.mit-license.org",
-  "main": [
-    "dist/zoomove.min.js",
-    "dist/zoomove.min.css"
-  ],
   "keywords": [
     "zoomove",
     "zoom",
