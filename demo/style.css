@@ -1,0 +1,161 @@
+/* Reset
+/ ============================== */
+html,
+body {
+ 	font-family: "Lato", sans-serif;
+	background: #EEEEEE;
+}
+pre,
+pre.prettyprint {
+	border: 0 !important;
+	border-left: .3rem solid #2c3e50 !important;
+	color: #655d5d;
+}
+.code-content .com {
+	color: rgba(44, 62, 80, 0.4);
+}
+
+a {
+	color: #2c3e50;
+}
+
+.button {
+	background-color: #2c3e50;
+	border-color: #2c3e50;
+	font-weight: 300;
+}
+
+.container {
+	max-width: 800px;
+}
+
+
+/* Header
+/ ============================== */
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 75vh;
+	z-index: 100;
+}
+.header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: #2c3e50;
+}
+	.header .logo {
+		position: relative;
+		display: block;
+		width: 350px;
+		max-width: 100%;
+		z-index: 1;
+	}
+		.header .logo svg {
+			width: 100%;
+		}
+			.header .logo svg path {
+				fill: #2c3e50;
+				stroke: #2c3e50;
+				stroke-miterlimit: 10;
+				stroke-width: 0.5px;
+				stroke-dasharray: 2064;
+				animation: 7s zooAnime forwards;
+			}
+
+		.header .logo h1 {
+			position: relative;
+			font-weight: 700;
+			font-size: 3.5em;
+			text-align: center;
+			color: #2c3e50;
+			animation: 7s textAnime forwards;
+		}
+			.header .logo h1 small {
+				position: absolute;
+				bottom: 0;
+				margin: 0 0 -7px -35px;
+				font-weight: 300;
+				font-size: 0.25em;
+				color: rgba(44, 62, 80, 0.7);
+			}
+
+@keyframes zooAnime {
+	0% {
+		fill-opacity: 0;
+		stroke-dashoffset: 2064;
+	}
+	20% {
+		fill-opacity: 0;
+		stroke: #2c3e50;
+	}
+	100% {
+		fill-opacity: 1;
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes textAnime {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+/* Main
+/ ============================== */
+.main .block {
+	margin-bottom: 80px;
+}
+	.main .block .title {
+		margin-bottom: 15px;
+		line-height: 1;
+		font-weight: 400;
+	}
+	.main .block p {
+		margin-bottom: 10px;
+		line-height: 1;
+	}
+
+.main .text-center {
+	display: block;
+	text-align: center;
+}
+
+
+.item {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	margin-bottom: 25px;
+}
+.item .zoo-item {
+	border: 1px solid #EEEEEE;
+	margin: 10px;
+}
+
+
+/* Footer
+/ ============================== */
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	background: rgba(44, 62, 80, 0.1);
+}
+	.footer a {
+		font-weight: 400;
+	}

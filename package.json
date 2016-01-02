@@ -6,8 +6,23 @@
   "homepage": "http://thompsonemerson.github.io/zoomove",
   "repository": "https://github.com/thompsonemerson/zoomove",
   "author": "Emerson Thompson <thompson.emerson@gmail.com>",
-  "license": "MIT <http://thompsonemerson.mit-license.org>",
+  "license": "http://thompsonemerson.mit-license.org",
+  "main": [
+    "dist/zoomove.min.js",
+    "dist/zoomove.min.css"
+  ],
+  "keywords": [
+    "zoomove",
+    "zoom",
+    "move",
+    "hover",
+    "mouseover",
+    "jquery",
+    "javascript",
+    "image"
+  ],
   "dependencies": {
+    "bower": "^1.7.2",
     "jquery": "latest"
   },
   "devDependencies": {
