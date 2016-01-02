@@ -83,3 +83,7 @@ Now says it is not easy?! ;)
 </script>
 <!-- Thus it is applied universally -->
 ```
+
+## License
+
+[MIT License](http://thompsonemerson.mit-license.org/) © Emerson Thompson
