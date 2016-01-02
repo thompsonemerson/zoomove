@@ -1,0 +1,33 @@
+{
+  "name": "zoomove",
+  "version": "1.0.0",
+  "description": "Enlarges the image with the mouse hover and move",
+  "title": "ZooMove",
+  "homepage": "http://thompsonemerson.github.io/zoomove",
+  "repository": "https://github.com/thompsonemerson/zoomove",
+  "author": "Emerson Thompson <thompson.emerson@gmail.com>",
+  "license": "MIT <http://thompsonemerson.mit-license.org>",
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-uglify": "^0.8.1",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.1",
+    "grunt-notify": "^0.4.3",
+    "load-grunt-tasks": "^3.3.0",
+    "time-grunt": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "start": "grunt",
+    "test": "grunt build"
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"boss": true,
+	"browser": true,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"globals": {
+		"$": false,
+		"google": false,
+		"cssua": false,
+		"jQuery": true
+	},
+	"immed": true,
+	"latedef": true,
+	"newcap": true,
+	"noarg": true,
+	"node": true,
+	"sub": true,
+	"undef": true,
+	"unused": false
+}
