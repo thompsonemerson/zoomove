@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ZooMove</title>
-	
+	<title>ZooMove | v1.0.0</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Is a plugin developed with jQuery, that allows to dynamically zoom the images with mouseover, and view details with mouse move.">
+
+    <meta property="og:title" content="clipboard.js">
+    <meta property="og:description" content="Is a plugin developed with jQuery, that allows to dynamically zoom the images with mouseover, and view details with mouse move.">
+    <meta property="og:url" content="https://thompsonemerson.github.io/zoomove">
+    <meta property="og:image" content="https://thompsonemerson.github.io/zomove/img/facebook.png">
+
 	<link href='https://fonts.googleapis.com/css?family=Lato:700,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 	<link rel="stylesheet" href="http://milligram.github.io/css/milligram.min.css">
-	<link rel="stylesheet" href="../dist/zoomove.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="dist/zoomove.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<main class="wrapper">
@@ -168,10 +176,10 @@
 				<pre class="code prettyprint prettyprinted"><code class="code-content"><span class="com">&lt;!-- JavaScript --&gt;</span><span class="pln">
 </span><span class="tag">&lt;script</span><span class="pln"></span><span class="tag">&gt;</span><span class="pln"></span>
    <span class="atn">$</span><span class="tag">(<span class="atv">'.zoo-item'</span>).ZooMove({
-   	scale: <span class="atv">'value'</span>,
-   	move: <span class="atv">'value'</span>,
-   	over: <span class="atv">'value'</span>,
-   	cursor: <span class="atv">'value'</span>
+   	scale: <span class="atv">'[value]'</span>,
+   	move: <span class="atv">'[value]'</span>,
+   	over: <span class="atv">'[value]'</span>,
+   	cursor: <span class="atv">'[value]'</span>
    });</span>
 <span class="tag">&lt;/script&gt;</span>
 <span class="com">&lt;!-- Thus it is applied universally --&gt;</span></code></pre>
@@ -187,7 +195,7 @@
 	
 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-	<script src="../dist/zoomove.min.js"></script>
+	<script src="dist/zoomove.min.js"></script>
 	<script>
 		$('.zoo-item').ZooMove({
 			cursor: 'true',
