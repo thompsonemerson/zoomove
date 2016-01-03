@@ -1,11 +1,11 @@
-# ZooMove
+# ZooMove | jQuery Zoom Image
 
 [![GitHub version](https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg)](https://badge.fury.io/gh/thompsonemerson%2Fzoomove)
 [![Bower version](https://badge.fury.io/bo/zoomove.svg)](https://badge.fury.io/bo/zoomove)
 [![npm version](https://badge.fury.io/js/zoomove.svg)](http://badge.fury.io/js/zoomove)
 
-> Is a plugin developed with jQuery, that allows to dynamically zoom the images with mouseover, and view details with mouse move. <br>
-Compatible with: jQuery 1.7+ in Chrome 42+, Firefox 41+, Safari 9+, Opera 29+, Internet Explorer 9+
+> Is a plugin developed with jQuery, that allows to dynamically zoom the images with mouseover, and view details with mouse move.
+
 
 ## Install
 
@@ -22,6 +22,7 @@ $ bower install zoomove --save
 ```
 
 If you prefer you can just [download a ZIP](https://github.com/thompsonemerson/zoomove/archive/master.zip) file.
+
 
 ## Setup
 
@@ -88,6 +89,30 @@ Now says it is not easy?! ;)
 </script>
 <!-- Thus it is applied universally -->
 ```
+
+
+## Browser Support
+
+![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | 
+![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | 
+![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | 
+![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | 
+![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)
+--- | --- | --- | --- | --- |
+42+ ✔ | 41+ ✔ | 9+ ✔ | 29+ ✔ | 9.0+ ✔ |
+
+
+## Contributing
+
+Help improve these docs. Open an [issue](https://github.com/thompsonemerson/zoomove/issues/new) or submit a pull request.
+
+- Navigate to the main page of the repository
+- [Fork it!](https://github.com/thompsonemerson/zoomove#fork-destination-box)
+- Create your feature branch: `git checkout -b my-new-feature`
+- Commit your changes: `git commit -m 'Add some feature'`
+- Push to the branch: `git push origin my-new-feature`
+- Submit a pull request =D
+
 
 ## License
 
