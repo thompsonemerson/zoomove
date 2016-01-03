@@ -1,5 +1,6 @@
 # ZooMove | jQuery Zoom Image
 
+[![Build Status](https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master)](https://travis-ci.org/thompsonemerson/zoomove)
 [![GitHub version](https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg)](https://badge.fury.io/gh/thompsonemerson%2Fzoomove)
 [![Bower version](https://badge.fury.io/bo/zoomove.svg)](https://badge.fury.io/bo/zoomove)
 [![npm version](https://badge.fury.io/js/zoomove.svg)](http://badge.fury.io/js/zoomove)
