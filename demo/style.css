@@ -38,7 +38,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 75vh;
+	height: 50vh;
 	z-index: 100;
 }
 .header:before {
