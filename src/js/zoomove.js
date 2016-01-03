@@ -4,6 +4,7 @@
 
         // config default
         var zoo = $.extend({
+            image: 'https://placeholdit.imgix.net/~text?txtsize=30&txt=image+default&w=350&h=350&txttrack=0',
             cursor: 'false',
             scale: '1.5',
             move: 'true',
@@ -29,12 +30,16 @@
                     });
                 }
 
+                // if image exist
+                if($(this).attr('zoo-image')) { zoo.imageD = $(this).attr('zoo-image'); }
+                    else{ zoo.imageD = zoo.image; }
+                    
                 // create image element background
                 $(this)
                     .append('<div class="zoo-img"></div>')
                     .children('.zoo-img')
                         .css({
-                            'background-image': 'url('+ $(this).attr('zoo-image') +')',
+                            'background-image': 'url('+ zoo.imageD +')',
                             'cursor': zoo.cursor
                         });
             })

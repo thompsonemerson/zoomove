@@ -1,6 +1,6 @@
 {
   "name": "zoomove",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Enlarges the image with the mouse hover and move",
   "title": "ZooMove",
   "homepage": "http://thompsonemerson.github.io/zoomove",
@@ -16,6 +16,17 @@
     "jquery",
     "javascript",
     "image"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    ".editorconfig",
+    ".gitignore",
+    ".travis.yml",
+    "component.json",
+    "bower.json",
+    "gruntfile.js",
+    "src"
   ],
   "dependencies": {
     "bower": "^1.7.2",
