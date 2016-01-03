@@ -14,8 +14,12 @@
     "hover",
     "mouseover",
     "jquery",
+    "jquery-plugin",
     "javascript",
-    "image"
+    "js",
+    "image",
+    "img",
+    "imagem"
   ],
   "ignore": [
     "node_modules",
