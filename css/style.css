@@ -156,6 +156,10 @@ a {
 			font-size: 1.2em;
 		}
 
+.github-share {
+	display: flex;
+	justify-content: center;
+}
 
 .item {
 	position: relative;
