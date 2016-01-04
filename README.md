@@ -102,7 +102,7 @@ Now says it is not easy?! ;)
 
 ## Contributing
 
-Find on our [roadmap](https://github.com/thompsonemerson/zoomove/issues/1) the next steps of the project ;) 
+Find on our [roadmap](https://github.com/thompsonemerson/zoomove/issues/1) the next steps of the project ;) <br> 
 Help improve these docs. Open an [issue](https://github.com/thompsonemerson/zoomove/issues/new) or submit a pull request.
 
 - Navigate to the main page of the repository
