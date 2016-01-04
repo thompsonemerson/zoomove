@@ -14,6 +14,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:700,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://milligram.github.io/css/milligram.min.css">
 	<link rel="stylesheet" href="dist/zoomove.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -53,6 +54,29 @@
 
 		<section class="container main">
 			<div class="block">
+				<div class="share-social">
+					<small>Share the ZooMove</small>
+					<a class="share-btn button" href="https://twitter.com/share?url=http://thompsonemerson.github.io/zoomove&text=ZooMove - jQuery Zoom Image &via=thompsonweb" title="Share on Twitter">
+						<span class="fa fa-twitter"></span>
+						<span class="share-btn-text">Twitter</span>
+					</a>
+
+					<a class="share-btn button" href="https://www.facebook.com/sharer/sharer.php?u=http://thompsonemerson.github.io/zoomove" title="Share on Facebook">
+						<span class="fa fa-facebook"></span>
+						<span class="share-btn-text">Facebook</span>
+					</a>
+
+					<a class="share-btn button" href="https://plus.google.com/share?url=http://thompsonemerson.github.io/zoomove" title="Share on Google+">
+						<span class="fa fa-google-plus"></span>
+						<span class="share-btn-text">Google+</span>
+					</a>
+
+					<a class="share-btn button" href="https://www.linkedin.com/shareArticle?mini=true&url=http://thompsonemerson.github.io/zoomove" title="Share on LinkedIn">
+						<span class="fa fa-linkedin"></span>
+						<span class="share-btn-text">LinkedIn</span>
+					</a>
+				</div>
+				
 				<h5 class="title">What's this?</h5>
 				<blockquote>
 					<p><em>
@@ -215,10 +239,28 @@
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<script src="dist/zoomove.min.js"></script>
 	<script>
-		$('.zoo-item').ZooMove({
-			cursor: 'true',
-			scale: '1.2',
-		});
+		(function(){
+			$('.zoo-item').ZooMove({
+				cursor: 'true',
+				scale: '1.2',
+			});
+  
+		  var shareButtons = document.querySelectorAll(".share-btn");
+
+		  if (shareButtons) {
+		      [].forEach.call(shareButtons, function(button) {
+		      button.addEventListener("click", function(event) {
+		 			var width = 650,
+		            height = 450;
+
+		        event.preventDefault();
+
+		        window.open(this.href, 'Share Dialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width='+width+',height='+height+',top='+(screen.height/2-height/2)+',left='+(screen.width/2-width/2));
+		      });
+		    });
+		  }
+
+		})();
 	</script>
 </body>
 </html>
