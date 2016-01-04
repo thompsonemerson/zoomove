@@ -1,5 +1,6 @@
 # ZooMove | jQuery Zoom Image
 
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](http://thompsonemerson.mit-license.org/)
 [![Build Status](https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master)](https://travis-ci.org/thompsonemerson/zoomove)
 [![GitHub version](https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg)](https://badge.fury.io/gh/thompsonemerson%2Fzoomove)
 [![Bower version](https://badge.fury.io/bo/zoomove.svg)](https://badge.fury.io/bo/zoomove)
@@ -110,6 +111,8 @@ Help improve these docs. Open an [issue](https://github.com/thompsonemerson/zoom
 - Push to the branch: `git push origin my-new-feature`
 - Submit a pull request =D
 
+## History
+See [Releases](https://github.com/thompsonemerson/zoomove/releases) for detailed changelog.
 
 ## License
 
