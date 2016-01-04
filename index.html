@@ -7,9 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Is a plugin developed with jQuery, that allows to dynamically zoom the images with mouseover, and view details with mouse move.">
 
-    <meta property="og:title" content="ZooMove | jQuery Zoom Image">
-    <meta property="og:description" content="Is a plugin developed with jQuery, that allows to dynamically zoom the images with mouseover, and view details with mouse move.">
     <meta property="og:url" content="http://thompsonemerson.github.io/zoomove/">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ZooMove | jQuery Zoom Image ">
+    <meta property="og:description" content="Is a plugin developed with jQuery, that allows to dynamically zoom the images with mouseover, and view details with mouse move.">
     <meta property="og:image" content="http://thompsonemerson.github.io/zoomove/img/facebook.png">
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:700,400,300' rel='stylesheet' type='text/css'>
@@ -30,6 +31,15 @@
 	</script>
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 	<main class="wrapper">
 		<header class="header">
 			<div class="logo">
