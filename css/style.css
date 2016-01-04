@@ -160,6 +160,10 @@ a {
 	display: flex;
 	justify-content: center;
 }
+.github-share iframe {
+	width: 75px;
+	margin: 0 10px;
+}
 
 .item {
 	position: relative;
