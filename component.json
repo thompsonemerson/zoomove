@@ -29,9 +29,10 @@
     ".editorconfig",
     ".gitignore",
     ".travis.yml",
-    "component.json",
+    "bower.json",
     "package.json",
     "gruntfile.js",
     "src"
-  ]
+  ],
+  "repo": "thompsonemerson/zoomove"
 }
