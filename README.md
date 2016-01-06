@@ -6,7 +6,7 @@
 [![Bower version](https://badge.fury.io/bo/zoomove.svg)](https://badge.fury.io/bo/zoomove)
 [![npm version](https://badge.fury.io/js/zoomove.svg)](http://badge.fury.io/js/zoomove)
 
-> Is a plugin developed with jQuery, that allows to dynamically zoom the images with mouseover, and view details with mouse move.
+> It's a plugin developed with jQuery, that allows to dynamically zoom images with mouseover, and view details with mouse move.
 
 
 ## Install
