@@ -1,6 +1,6 @@
 <p align="center">
   <a href="">
-    <img alt="Logo" src="demo/logo_zoomove.svg" width="600px">
+    <img alt="Logo" src="http://i.imgur.com/UPOSXyp.png" width="600px">
   </a>
 </p>
 
@@ -113,7 +113,7 @@ Now says it is not easy?! ;)
 
 ## Examples
 
-![GIFs <3](https://media.giphy.com/media/xT1XGOLT4erod36Z4Q/giphy.gif)
+![GIFs <3](https://media.giphy.com/media/3o6ozmHwJIzCaBadgI/giphy.gif)
 
 ```html
 <!-- Image 1 | Default -->
