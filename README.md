@@ -100,6 +100,21 @@ Now says it is not easy?! ;)
 <!-- Thus it is applied universally -->
 ```
 
+## Examples
+
+![GIFs <3](https://media.giphy.com/media/xT1XGOLT4erod36Z4Q/giphy.gif)
+
+```html
+<!-- Image 1 | Default -->
+<figure class="zoo-item" zoo-image="img/example.jpg"></figure>
+
+<!-- Image 2 | Scale value "3" (300%) -->
+<figure class="zoo-item" zoo-image="img/example.jpg" zoo-scale="3"></figure>
+
+<!-- Image 3 | Over "true" and Move "false" -->
+<figure class="zoo-item" zoo-image="img/example.jpg" zoo-over="true" zoo-move="false"></figure>
+```
+
 ## Browser Support
 
 | ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png) |
