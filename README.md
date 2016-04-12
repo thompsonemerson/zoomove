@@ -16,6 +16,17 @@
   <a href="http://badge.fury.io/js/zoomove" title="npm version"><img src="https://badge.fury.io/js/zoomove.svg"/></a>
 </p>
 
+## Table of Contents
+
+- [Install](#install)
+- [Setup](#setup)
+- [How to Use](how-to-use)
+- [Examples](examples)
+- [Browser Support](#browser-support)
+- [Contributing](#contributing)
+- [History](#history)
+- [License](#license)
+
 ## Install
 
 Get with npm.
@@ -63,7 +74,7 @@ Ready, prepared environment, now is hour of our plugin take action and prepare a
 Now says it is not easy?! ;)
 
 
-## How to use
+## How to Use
 
 | Property  | Default  | Description |
 | :------------ |:---------------:| :-----|
