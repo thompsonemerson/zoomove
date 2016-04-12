@@ -138,12 +138,12 @@ Now says it is not easy?! ;)
 Find on our [roadmap](https://github.com/thompsonemerson/zoomove/issues/1) the next steps of the project ;) <br>
 Help improve these docs. Open an [issue](https://github.com/thompsonemerson/zoomove/issues/new) or submit a pull request.
 
-- Navigate to the main page of the repository
-- [Fork it!](https://github.com/thompsonemerson/zoomove#fork-destination-box)
-- Create your feature branch: `git checkout -b my-new-feature`
-- Commit your changes: `git commit -m 'Add some feature'`
-- Push to the branch: `git push origin my-new-feature`
-- Submit a pull request =D
+1. Navigate to the main page of the repository
+1. [Fork it!](https://github.com/thompsonemerson/zoomove#fork-destination-box)
+1. Create your feature branch: `git checkout -b my-new-feature`
+1. Commit your changes: `git commit -m 'Add some feature'`
+1. Push to the branch: `git push origin my-new-feature`
+1. Submit a pull request =D
 
 ## History
 
