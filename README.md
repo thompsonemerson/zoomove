@@ -113,16 +113,31 @@ Now says it is not easy?! ;)
 
 ## Examples
 
+>  Images by [lorempixel](http://lorempixel.com).
+
 ![GIFs <3](https://media.giphy.com/media/3o6ozmHwJIzCaBadgI/giphy.gif)
 
+### Image 1
+
+> Default
+
 ```html
-<!-- Image 1 | Default -->
 <figure class="zoo-item" zoo-image="img/example.jpg"></figure>
+```
 
-<!-- Image 2 | Scale value "3" (300%) -->
+### Image 2
+
+> Scale value `3` (`300%`)
+
+```html
 <figure class="zoo-item" zoo-image="img/example.jpg" zoo-scale="3"></figure>
+```
 
-<!-- Image 3 | Over "true" and Move "false" -->
+### Image 3
+
+> Over `true` and Move `false`
+
+```html
 <figure class="zoo-item" zoo-image="img/example.jpg" zoo-over="true" zoo-move="false"></figure>
 ```
 
