@@ -20,8 +20,8 @@
 
 - [Install](#install)
 - [Setup](#setup)
-- [How to Use](how-to-use)
-- [Examples](examples)
+- [How to Use](#how-to-use)
+- [Examples](#examples)
 - [Browser Support](#browser-support)
 - [Contributing](#contributing)
 - [History](#history)
