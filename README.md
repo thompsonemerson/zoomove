@@ -1,13 +1,20 @@
-# ZooMove | jQuery Zoom Image
+<p align="center">
+  <a href="">
+    <img alt="Logo" src="demo/logo_zoomove.svg" width="600px">
+  </a>
+</p>
 
-[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](http://thompsonemerson.mit-license.org/)
-[![Build Status](https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master)](https://travis-ci.org/thompsonemerson/zoomove)
-[![GitHub version](https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg)](https://badge.fury.io/gh/thompsonemerson%2Fzoomove)
-[![Bower version](https://badge.fury.io/bo/zoomove.svg)](https://badge.fury.io/bo/zoomove)
-[![npm version](https://badge.fury.io/js/zoomove.svg)](http://badge.fury.io/js/zoomove)
+<p align="center">
+  It's a plugin developed with *jQuery*, that allows to dynamically zoom images with mouseover, and view details with mouse move.
+</p>
 
-> It's a plugin developed with jQuery, that allows to dynamically zoom images with mouseover, and view details with mouse move.
-
+<p align="center">
+  <a href="http://thompsonemerson.mit-license.org/"><img alt="licence mit" src="https://img.shields.io/badge/licence-MIT-blue.svg"></a>
+  <a href="https://travis-ci.org/thompsonemerson/zoomove"><img alt="Build Status" src="https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master"></a>
+  <a href="https://badge.fury.io/gh/thompsonemerson%2Fzoomove"><img alt="GitHub version" src="https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg"/></a>
+  <a href="https://badge.fury.io/bo/zoomove" title="Bower version"><img src="https://badge.fury.io/bo/zoomove.svg"/></a>
+  <a href="http://badge.fury.io/js/zoomove" title="npm version"><img src="https://badge.fury.io/js/zoomove.svg"/></a>
+</p>
 
 ## Install
 
@@ -44,7 +51,7 @@ First, include the script located on the `dist` folder.
 Now need to prepare our(s) image(s) and show to the ZooMove.
 ```html
 <!-- Item image -->
-<figure class="zoo-item" zoo-image="img/example.jpg"></figure> 
+<figure class="zoo-item" zoo-image="img/example.jpg"></figure>
 
 <!-- Starting the ZooMove -->
 <script>
@@ -57,24 +64,25 @@ Now says it is not easy?! ;)
 
 
 ## How to use
+
 | Property  | Default  | Description |
 | :------------ |:---------------:| :-----|
 | zoo-image     | -               | The url of the photo to be displayed.                   |
 | zoo-scale     | 1.5 (150%)      | Sets the zoom size that should be applied to the image.              |
 | zoo-move      | true            | Choose whether the image should move with the mouse move.            |
-| zoo-over      |	false           |	With 'over' it is possible to define whether the image may be above. |
-| zoo-cursor	  | false	          | Define the cursor pointer or default.                                |
+| zoo-over      |  false           |  With 'over' it is possible to define whether the image may be above. |
+| zoo-cursor    | false            | Define the cursor pointer or default.                                |
 
 ```html
 <!-- HTML Element -->
-<figure 
-	class="zoo-item" 
-	zoo-image="[value]"
-	zoo-scale="[value]"
-	zoo-move="[value]"
-	zoo-over="[value]"
-	zoo-cursor="[value]"
-	>
+<figure
+  class="zoo-item"
+  zoo-image="[value]"
+  zoo-scale="[value]"
+  zoo-move="[value]"
+  zoo-over="[value]"
+  zoo-cursor="[value]"
+  >
 </figure>
 ```
 
@@ -82,16 +90,15 @@ Now says it is not easy?! ;)
 <!-- JavaScript -->
 <script>
    $('.zoo-item').ZooMove({
-   		image: '[value]',
-     	scale: '[value]',
-     	move: '[value]',
-     	over: '[value]',
-     	cursor: '[value]'
+       image: '[value]',
+       scale: '[value]',
+       move: '[value]',
+       over: '[value]',
+       cursor: '[value]'
    });
 </script>
 <!-- Thus it is applied universally -->
 ```
-
 
 ## Browser Support
 
@@ -102,7 +109,7 @@ Now says it is not easy?! ;)
 
 ## Contributing
 
-Find on our [roadmap](https://github.com/thompsonemerson/zoomove/issues/1) the next steps of the project ;) <br> 
+Find on our [roadmap](https://github.com/thompsonemerson/zoomove/issues/1) the next steps of the project ;) <br>
 Help improve these docs. Open an [issue](https://github.com/thompsonemerson/zoomove/issues/new) or submit a pull request.
 
 - Navigate to the main page of the repository
@@ -113,6 +120,7 @@ Help improve these docs. Open an [issue](https://github.com/thompsonemerson/zoom
 - Submit a pull request =D
 
 ## History
+
 See [Releases](https://github.com/thompsonemerson/zoomove/releases) for detailed changelog.
 
 ## License
