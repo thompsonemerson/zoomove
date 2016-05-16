@@ -62,8 +62,9 @@ Now says it is not easy?! ;)
 | zoo-image     | -               | The url of the photo to be displayed.                   |
 | zoo-scale     | 1.5 (150%)      | Sets the zoom size that should be applied to the image.              |
 | zoo-move      | true            | Choose whether the image should move with the mouse move.            |
-| zoo-over      |	false           |	With 'over' it is possible to define whether the image may be above. |
-| zoo-cursor	  | false	          | Define the cursor pointer or default.                                |
+| zoo-over      |   false           |   With 'over' it is possible to define whether the image may be above. |
+| zoo-cursor      | false             | Define the cursor pointer or default.                                |
+| zoo-mask      | transparent     | Define the background color mask. |
 
 ```html
 <!-- HTML Element -->
@@ -74,7 +75,21 @@ Now says it is not easy?! ;)
 	zoo-move="[value]"
 	zoo-over="[value]"
 	zoo-cursor="[value]"
+	zoo-mask="[value]"
 	>
+</figure>
+
+<!-- HTML Element with <img> src -->
+<figure 
+	class="zoo-item" 
+	zoo-scale="[value]"
+	zoo-move="[value]"
+	zoo-over="[value]"
+	zoo-cursor="[value]"
+	zoo-mask="[value]"
+	>
+	<img src="[value]" alt="">
+	<figcaption>[value]</figcaption>
 </figure>
 ```
 
@@ -82,11 +97,12 @@ Now says it is not easy?! ;)
 <!-- JavaScript -->
 <script>
    $('.zoo-item').ZooMove({
-   		image: '[value]',
-     	scale: '[value]',
-     	move: '[value]',
-     	over: '[value]',
-     	cursor: '[value]'
+		image: '[value]',
+		scale: '[value]',
+		move: '[value]',
+		over: '[value]',
+		cursor: '[value]',
+		mask: '[value]'
    });
 </script>
 <!-- Thus it is applied universally -->
