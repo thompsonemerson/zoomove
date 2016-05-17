@@ -1,13 +1,31 @@
-# ZooMove | jQuery Zoom Image
+<p align="center">
+  <a href="">
+    <img alt="Logo" src="http://i.imgur.com/UPOSXyp.png" width="600px">
+  </a>
+</p>
 
-[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](http://thompsonemerson.mit-license.org/)
-[![Build Status](https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master)](https://travis-ci.org/thompsonemerson/zoomove)
-[![GitHub version](https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg)](https://badge.fury.io/gh/thompsonemerson%2Fzoomove)
-[![Bower version](https://badge.fury.io/bo/zoomove.svg)](https://badge.fury.io/bo/zoomove)
-[![npm version](https://badge.fury.io/js/zoomove.svg)](http://badge.fury.io/js/zoomove)
+<p align="center">
+  It's a plugin developed with *jQuery*, that allows to dynamically zoom images with mouseover, and view details with mouse move.
+</p>
 
-> It's a plugin developed with jQuery, that allows to dynamically zoom images with mouseover, and view details with mouse move.
+<p align="center">
+  <a href="http://thompsonemerson.mit-license.org/"><img alt="licence mit" src="https://img.shields.io/badge/licence-MIT-blue.svg"></a>
+  <a href="https://travis-ci.org/thompsonemerson/zoomove"><img alt="Build Status" src="https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master"></a>
+  <a href="https://badge.fury.io/gh/thompsonemerson%2Fzoomove"><img alt="GitHub version" src="https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg"/></a>
+  <a href="https://badge.fury.io/bo/zoomove" title="Bower version"><img src="https://badge.fury.io/bo/zoomove.svg"/></a>
+  <a href="http://badge.fury.io/js/zoomove" title="npm version"><img src="https://badge.fury.io/js/zoomove.svg"/></a>
+</p>
 
+## Table of Contents
+
+- [Install](#install)
+- [Setup](#setup)
+- [How to Use](#how-to-use)
+- [Examples](#examples)
+- [Browser Support](#browser-support)
+- [Contributing](#contributing)
+- [History](#history)
+- [License](#license)
 
 ## Install
 
@@ -44,7 +62,7 @@ First, include the script located on the `dist` folder.
 Now need to prepare our(s) image(s) and show to the ZooMove.
 ```html
 <!-- Item image -->
-<figure class="zoo-item" zoo-image="img/example.jpg"></figure> 
+<figure class="zoo-item" zoo-image="img/example.jpg"></figure>
 
 <!-- Starting the ZooMove -->
 <script>
@@ -56,25 +74,26 @@ Ready, prepared environment, now is hour of our plugin take action and prepare a
 Now says it is not easy?! ;)
 
 
-## How to use
+## How to Use
+
 | Property  | Default  | Description |
 | :------------ |:---------------:| :-----|
 | zoo-image     | -               | The url of the photo to be displayed.                   |
 | zoo-scale     | 1.5 (150%)      | Sets the zoom size that should be applied to the image.              |
 | zoo-move      | true            | Choose whether the image should move with the mouse move.            |
-| zoo-over      |	false           |	With 'over' it is possible to define whether the image may be above. |
-| zoo-cursor	  | false	          | Define the cursor pointer or default.                                |
+| zoo-over      |  false           |  With 'over' it is possible to define whether the image may be above. |
+| zoo-cursor    | false            | Define the cursor pointer or default.                                |
 
 ```html
 <!-- HTML Element -->
-<figure 
-	class="zoo-item" 
-	zoo-image="[value]"
-	zoo-scale="[value]"
-	zoo-move="[value]"
-	zoo-over="[value]"
-	zoo-cursor="[value]"
-	>
+<figure
+  class="zoo-item"
+  zoo-image="[value]"
+  zoo-scale="[value]"
+  zoo-move="[value]"
+  zoo-over="[value]"
+  zoo-cursor="[value]"
+  >
 </figure>
 ```
 
@@ -82,16 +101,45 @@ Now says it is not easy?! ;)
 <!-- JavaScript -->
 <script>
    $('.zoo-item').ZooMove({
-   		image: '[value]',
-     	scale: '[value]',
-     	move: '[value]',
-     	over: '[value]',
-     	cursor: '[value]'
+       image: '[value]',
+       scale: '[value]',
+       move: '[value]',
+       over: '[value]',
+       cursor: '[value]'
    });
 </script>
 <!-- Thus it is applied universally -->
 ```
 
+## Examples
+
+>  Images by [lorempixel](http://lorempixel.com).
+
+![GIFs <3](https://media.giphy.com/media/3o6ozmHwJIzCaBadgI/giphy.gif)
+
+### Image 1
+
+> Default
+
+```html
+<figure class="zoo-item" zoo-image="img/example.jpg"></figure>
+```
+
+### Image 2
+
+> Scale value `3` (`300%`)
+
+```html
+<figure class="zoo-item" zoo-image="img/example.jpg" zoo-scale="3"></figure>
+```
+
+### Image 3
+
+> Over `true` and Move `false`
+
+```html
+<figure class="zoo-item" zoo-image="img/example.jpg" zoo-over="true" zoo-move="false"></figure>
+```
 
 ## Browser Support
 
@@ -102,17 +150,18 @@ Now says it is not easy?! ;)
 
 ## Contributing
 
-Find on our [roadmap](https://github.com/thompsonemerson/zoomove/issues/1) the next steps of the project ;) <br> 
+Find on our [roadmap](https://github.com/thompsonemerson/zoomove/issues/1) the next steps of the project ;) <br>
 Help improve these docs. Open an [issue](https://github.com/thompsonemerson/zoomove/issues/new) or submit a pull request.
 
-- Navigate to the main page of the repository
-- [Fork it!](https://github.com/thompsonemerson/zoomove#fork-destination-box)
-- Create your feature branch: `git checkout -b my-new-feature`
-- Commit your changes: `git commit -m 'Add some feature'`
-- Push to the branch: `git push origin my-new-feature`
-- Submit a pull request =D
+1. Navigate to the main page of the repository
+1. [Fork it!](https://github.com/thompsonemerson/zoomove#fork-destination-box)
+1. Create your feature branch: `git checkout -b my-new-feature`
+1. Commit your changes: `git commit -m 'Add some feature'`
+1. Push to the branch: `git push origin my-new-feature`
+1. Submit a pull request =D
 
 ## History
+
 See [Releases](https://github.com/thompsonemerson/zoomove/releases) for detailed changelog.
 
 ## License
