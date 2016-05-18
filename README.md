@@ -1,20 +1,12 @@
-<p align="center">
-  <a href="">
-    <img alt="Logo" src="http://i.imgur.com/UPOSXyp.png" width="600px">
-  </a>
-</p>
+# ZooMove | jQuery Zoom Image
 
-<p align="center">
-  It's a plugin developed with *jQuery*, that allows to dynamically zoom images with mouseover, and view details with mouse move.
-</p>
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](http://thompsonemerson.mit-license.org/)
+[![Build Status](https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master)](https://travis-ci.org/thompsonemerson/zoomove)
+[![GitHub version](https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg)](https://badge.fury.io/gh/thompsonemerson%2Fzoomove)
+[![Bower version](https://badge.fury.io/bo/zoomove.svg)](https://badge.fury.io/bo/zoomove)
+[![npm version](https://badge.fury.io/js/zoomove.svg)](http://badge.fury.io/js/zoomove)
 
-<p align="center">
-  <a href="http://thompsonemerson.mit-license.org/"><img alt="licence mit" src="https://img.shields.io/badge/licence-MIT-blue.svg"></a>
-  <a href="https://travis-ci.org/thompsonemerson/zoomove"><img alt="Build Status" src="https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master"></a>
-  <a href="https://badge.fury.io/gh/thompsonemerson%2Fzoomove"><img alt="GitHub version" src="https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg"/></a>
-  <a href="https://badge.fury.io/bo/zoomove" title="Bower version"><img src="https://badge.fury.io/bo/zoomove.svg"/></a>
-  <a href="http://badge.fury.io/js/zoomove" title="npm version"><img src="https://badge.fury.io/js/zoomove.svg"/></a>
-</p>
+> It's a plugin developed with jQuery, that allows to dynamically zoom images with mouseover, and view details with mouse move.
 
 ## Table of Contents
 
