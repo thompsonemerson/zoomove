@@ -12,9 +12,9 @@
         }, options );
 
         // cursor config
+        if($(this).attr('zoo-cursor')) { zoo.cursor = $(this).attr('zoo-cursor'); }
         if(zoo.cursor === 'true') { zoo.cursor = 'pointer'; }
         else{ zoo.cursor = 'default'; }
-        
 
         this
             .each(function(){
