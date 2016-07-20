@@ -1,5 +1,5 @@
 (function ( $ ) {
- 
+
     $.fn.ZooMove = function( options ) {
 
         // config default
@@ -12,7 +12,7 @@
         }, options );
 
         // cursor config
-        if($(this).attr('zoo-cursor')) { zoo.cursor = $(this).attr('zoo-cursor'); }
+        if($(this).attr('data-zoo-cursor')) { zoo.cursor = $(this).attr('data-zoo-cursor'); }
         if(zoo.cursor === 'true') { zoo.cursor = 'pointer'; }
         else{ zoo.cursor = 'default'; }
 
@@ -20,7 +20,7 @@
             .each(function(){
 
                 // if over exist and over true
-                if($(this).attr('zoo-over')) { zoo.overD = $(this).attr('zoo-over'); }
+                if($(this).attr('data-zoo-over')) { zoo.overD = $(this).attr('data-zoo-over'); }
                     else{ zoo.overD = zoo.over; }
 
                 if(zoo.overD === 'true'){
@@ -31,9 +31,9 @@
                 }
 
                 // if image exist
-                if($(this).attr('zoo-image')) { zoo.imageD = $(this).attr('zoo-image'); }
+                if($(this).attr('data-zoo-image')) { zoo.imageD = $(this).attr('data-zoo-image'); }
                     else{ zoo.imageD = zoo.image; }
-                    
+
                 // create image element background
                 $(this)
                     .append('<div class="zoo-img"></div>')
@@ -48,11 +48,11 @@
                 e.preventDefault();
 
                 // if scale exist
-                if($(this).attr('zoo-scale')) { zoo.scaleD = $(this).attr('zoo-scale'); }
+                if($(this).attr('data-zoo-scale')) { zoo.scaleD = $(this).attr('data-zoo-scale'); }
                     else{ zoo.scaleD = zoo.scale; }
 
                 // if move exist
-                if($(this).attr('zoo-move')) { zoo.moveD = $(this).attr('zoo-move'); }
+                if($(this).attr('data-zoo-move')) { zoo.moveD = $(this).attr('data-zoo-move'); }
                     else{ zoo.moveD = zoo.move; }
 
                 // change scale
@@ -72,8 +72,8 @@
                     $(this)
                         .children('.zoo-img')
                             .css({
-                                'transform-origin': 
-                                    ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + 
+                                'transform-origin':
+                                    ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' +
                                     ((e.pageY - $(this).offset().top) / $(this).height()) * 100 + '%'
                             });
                 }
@@ -88,7 +88,7 @@
                         .css({
                             'transform': 'scale(1)'
                         });
-            
+
         });
 
     };

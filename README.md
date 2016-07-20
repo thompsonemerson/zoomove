@@ -54,7 +54,7 @@ First, include the script located on the `dist` folder.
 Now need to prepare our(s) image(s) and show to the ZooMove.
 ```html
 <!-- Item image -->
-<figure class="zoo-item" zoo-image="img/example.jpg"></figure>
+<figure class="zoo-item" data-zoo-image="img/example.jpg"></figure>
 
 <!-- Starting the ZooMove -->
 <script>
@@ -70,21 +70,21 @@ Now says it is not easy?! ;)
 
 | Property  | Default  | Description |
 | :------------ |:---------------:| :-----|
-| zoo-image     | -               | The url of the photo to be displayed.                   |
-| zoo-scale     | 1.5 (150%)      | Sets the zoom size that should be applied to the image.              |
-| zoo-move      | true            | Choose whether the image should move with the mouse move.            |
-| zoo-over      |  false           |  With 'over' it is possible to define whether the image may be above. |
-| zoo-cursor    | false            | Define the cursor pointer or default.                                |
+| data-zoo-image     | -               | The url of the photo to be displayed.                   |
+| data-zoo-scale     | 1.5 (150%)      | Sets the zoom size that should be applied to the image.              |
+| data-zoo-move      | true            | Choose whether the image should move with the mouse move.            |
+| data-zoo-over      |  false           |  With 'over' it is possible to define whether the image may be above. |
+| data-zoo-cursor    | false            | Define the cursor pointer or default.                                |
 
 ```html
 <!-- HTML Element -->
 <figure
   class="zoo-item"
-  zoo-image="[value]"
-  zoo-scale="[value]"
-  zoo-move="[value]"
-  zoo-over="[value]"
-  zoo-cursor="[value]"
+  data-zoo-image="[value]"
+  data-zoo-scale="[value]"
+  data-zoo-move="[value]"
+  data-zoo-over="[value]"
+  data-zoo-cursor="[value]"
   >
 </figure>
 ```
@@ -114,7 +114,7 @@ Now says it is not easy?! ;)
 > Default
 
 ```html
-<figure class="zoo-item" zoo-image="img/example.jpg"></figure>
+<figure class="zoo-item" data-zoo-image="img/example.jpg"></figure>
 ```
 
 ### Image 2
@@ -122,7 +122,7 @@ Now says it is not easy?! ;)
 > Scale value `3` (`300%`)
 
 ```html
-<figure class="zoo-item" zoo-image="img/example.jpg" zoo-scale="3"></figure>
+<figure class="zoo-item" data-zoo-image="img/example.jpg" data-zoo-scale="3"></figure>
 ```
 
 ### Image 3
@@ -130,7 +130,7 @@ Now says it is not easy?! ;)
 > Over `true` and Move `false`
 
 ```html
-<figure class="zoo-item" zoo-image="img/example.jpg" zoo-over="true" zoo-move="false"></figure>
+<figure class="zoo-item" data-zoo-image="img/example.jpg" data-zoo-over="true" data-zoo-move="false"></figure>
 ```
 
 ## Browser Support
