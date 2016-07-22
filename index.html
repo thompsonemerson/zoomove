@@ -13,11 +13,11 @@
     <meta property="og:title" content="ZooMove | jQuery Zoom Image ">
     <meta property="og:description" content="It's a plugin developed with jQuery, that allows to dynamically zoom images with mouseover, and view details with mouse move.">
     <meta property="og:image" content="http://thompsonemerson.github.io/zoomove/img/facebook.png">
-    
+
     <meta property="article:published_time" content="2015-12-25T01:00:00Z">
 		<meta property="article:author" content="Emerson Thompson">
 		<meta property="article:section" content="website">
-		
+
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:domain" content="ZooMove | jQuery Zoom Image">
 		<meta name="twitter:url" content="http://thompsonemerson.github.io/zoomove">
@@ -72,7 +72,7 @@
 			        L129.3,409.6z M1.4,408.9c-0.5-2.2-0.8-4.4-0.8-6.8c0-15.4,12.5-27.9,27.9-27.9c1.9,0,3.7,0.2,5.5,0.5L1.4,408.9z M198.7,359.5h60.8
 			        v3.4h-60.8V359.5z M210.8,372.6h80.8v3.4h-80.8V372.6z M216.6,386.4h37v3.4h-37V386.4z"/>
 			    </svg>
-			    <h1>ZooMove <small>v1.1.0</small></h1>
+			    <h1>ZooMove <small>v1.2.0</small></h1>
 			</div>
 		</header>
 
@@ -85,10 +85,10 @@
 						<span class="share-btn-text">Twitter</span>
 					</a>
 
-					<!--<a class="share-btn button" href="https://www.facebook.com/sharer/sharer.php?u=http://thompsonemerson.github.io/zoomove" title="Share on Facebook">
+					<a class="share-btn button" href="https://www.facebook.com/sharer/sharer.php?u=http://thompsonemerson.github.io/zoomove" title="Share on Facebook">
 						<span class="fa fa-facebook"></span>
 						<span class="share-btn-text">Facebook</span>
-					</a>-->
+					</a>
 
 					<a class="share-btn button" href="https://plus.google.com/share?url=http://thompsonemerson.github.io/zoomove" title="Share on Google+">
 						<span class="fa fa-google-plus"></span>
@@ -100,7 +100,7 @@
 						<span class="share-btn-text">LinkedIn</span>
 					</a>
 				</div>
-				
+
 				<h5 class="title">What's this?</h5>
 				<blockquote>
 					<p><em>
@@ -132,16 +132,16 @@
 <span class="com">&lt;!-- ZooMove JS minified --&gt;</span><span class="pln">
 </span><span class="tag">&lt;script</span><span class="pln"></span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"dist/zoomove.min.js"</span><span class="tag">&gt;</span><span class="pln"></span><span class="tag">&lt;/script&gt;</span>
 </code></pre>
-				
+
 				<p>Now need to prepare our(s) image(s) and show to the ZooMove.</p>
 				<pre class="code prettyprint prettyprinted"><code class="code-content"><span class="com">&lt;!-- Item image --&gt;</span><span class="pln">
-</span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span><span class="atn">zoo-image</span><span class="pun">=</span><span class="atv">"img/example.jpg"</span><span class="tag">&gt;</span><span class="tag">&lt;/figure&gt;</span><span class="pln"> </span>
+</span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span><span class="atn">data-zoo-image</span><span class="pun">=</span><span class="atv">"img/example.jpg"</span><span class="tag">&gt;</span><span class="tag">&lt;/figure&gt;</span><span class="pln"> </span>
 
 <span class="com">&lt;!-- Starting the ZooMove --&gt;</span><span class="pln">
 </span><span class="tag">&lt;script</span><span class="pln"></span><span class="tag">&gt;</span><span class="pln"></span>
    <span class="atn">$</span><span class="tag">(<span class="atv">'.zoo-item'</span>).ZooMove();</span>
 <span class="tag">&lt;/script&gt;</span></code></pre>
-				
+
 				<p>Ready, prepared environment, now is hour of our plugin take action and prepare all remaining process. <br>Now says it is not easy?! ;)</p>
 			</div>
 
@@ -151,31 +151,31 @@
 				<div class="row">
 					<div class="column">
 						<div class="item">
-							<figure class="zoo-item" zoo-image="http://lorempixel.com/600/600/animals/">Loading...</figure>
+							<figure class="zoo-item" data-zoo-image="http://lorempixel.com/600/600/animals/">Loading...</figure>
 						</div>
 						<small class="text-center">Image 1</small>
 					</div>
 					<div class="column">
 						<div class="item">
-							<figure class="zoo-item" zoo-scale="3" zoo-image="http://lorempixel.com/600/600/animals/">Loading...</figure>
+							<figure class="zoo-item" data-zoo-scale="3" data-zoo-image="http://lorempixel.com/600/600/animals/">Loading...</figure>
 						</div>
 						<small class="text-center">Image 2</small>
 					</div>
 					<div class="column">
 						<div class="item">
-							<figure class="zoo-item" zoo-over="true" zoo-move="false" zoo-image="http://lorempixel.com/600/600/animals/">Loading...</figure>
+							<figure class="zoo-item" data-zoo-over="true" data-zoo-move="false" data-zoo-image="http://lorempixel.com/600/600/animals/">Loading...</figure>
 						</div>
 						<small class="text-center">Image 3</small>
 					</div>
 				</div>
 				<pre class="code prettyprint prettyprinted"><code class="code-content"><span class="com">&lt;!-- Image 1 | Default --&gt;</span><span class="pln">
-</span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span><span class="atn">zoo-image</span><span class="pun">=</span><span class="atv">"img/example.jpg"</span><span class="tag">&gt;</span><span class="tag">&lt;/figure&gt;</span>
+</span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span><span class="atn">data-zoo-image</span><span class="pun">=</span><span class="atv">"img/example.jpg"</span><span class="tag">&gt;</span><span class="tag">&lt;/figure&gt;</span>
 
 <span class="com">&lt;!-- Image 2 | Scale value "3" (300%) --&gt;</span><span class="pln">
-</span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span><span class="atn">zoo-image</span><span class="pun">=</span><span class="atv">"img/example.jpg"</span><span class="pln"> </span><span class="atn">zoo-scale</span><span class="pun">=</span><span class="atv">"3"</span><span class="tag">&gt;</span><span class="tag">&lt;/figure&gt;</span>
+</span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span><span class="atn">data-zoo-image</span><span class="pun">=</span><span class="atv">"img/example.jpg"</span><span class="pln"> </span><span class="atn">data-zoo-scale</span><span class="pun">=</span><span class="atv">"3"</span><span class="tag">&gt;</span><span class="tag">&lt;/figure&gt;</span>
 
 <span class="com">&lt;!-- Image 3 | Over "true" and Move "false" --&gt;</span><span class="pln">
-</span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span><span class="atn">zoo-image</span><span class="pun">=</span><span class="atv">"img/example.jpg"</span><span class="pln"> </span><span class="atn">zoo-over</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">zoo-move</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="tag">&lt;/figure&gt;</span></code></pre>
+</span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span><span class="atn">data-zoo-image</span><span class="pun">=</span><span class="atv">"img/example.jpg"</span><span class="pln"> </span><span class="atn">data-zoo-over</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">data-zoo-move</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="tag">&lt;/figure&gt;</span></code></pre>
 			</div>
 
 			<div class="block">
@@ -190,43 +190,43 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>zoo-image</td>
+							<td>data-zoo-image</td>
 							<td>-</td>
 							<td>The url of the photo to be displayed.</td>
 						</tr>
 						<tr>
-							<td>zoo-scale</td>
+							<td>data-zoo-scale</td>
 							<td>1.5 (150%)</td>
 							<td>Sets the zoom size that should be applied to the image.</td>
 						</tr>
 						<tr>
-							<td>zoo-move</td>
+							<td>data-zoo-move</td>
 							<td>true</td>
 							<td>Choose whether the image should move with the mouse move</td>
 						</tr>
 						<tr>
-							<td>zoo-over</td>
+							<td>data-zoo-over</td>
 							<td>false</td>
 							<td>With 'over' it is possible to define whether the image may be above</td>
 						</tr>
 						<tr>
-							<td>zoo-cursor</td>
+							<td>data-zoo-cursor</td>
 							<td>false</td>
 							<td>Define the cursor pointer or default</td>
 						</tr>
 					</tbody>
 				</table>
-				
+
 				<div class="row">
 					<div class="column">
 				<pre class="code prettyprint prettyprinted"><code class="code-content"><span class="com">&lt;!-- HTML Element --&gt;</span><span class="pln">
 </span><span class="tag">&lt;figure</span><span class="pln"> </span>
 	<span class="atn">class</span><span class="pun">=</span><span class="atv">"zoo-item"</span><span class="pln"> </span>
-	<span class="atn">zoo-image</span><span class="pun">=</span><span class="atv">"[value]"</span>
-	<span class="atn">zoo-scale</span><span class="pun">=</span><span class="atv">"[value]"</span>
-	<span class="atn">zoo-move</span><span class="pun">=</span><span class="atv">"[value]"</span>
-	<span class="atn">zoo-over</span><span class="pun">=</span><span class="atv">"[value]"</span>
-	<span class="atn">zoo-cursor</span><span class="pun">=</span><span class="atv">"[value]"</span>
+	<span class="atn">data-zoo-image</span><span class="pun">=</span><span class="atv">"[value]"</span>
+	<span class="atn">data-zoo-scale</span><span class="pun">=</span><span class="atv">"[value]"</span>
+	<span class="atn">data-zoo-move</span><span class="pun">=</span><span class="atv">"[value]"</span>
+	<span class="atn">data-zoo-over</span><span class="pun">=</span><span class="atv">"[value]"</span>
+	<span class="atn">data-zoo-cursor</span><span class="pun">=</span><span class="atv">"[value]"</span>
 <span class="tag">&gt;</span>
 <span class="tag">&lt;/figure&gt;</span></code></pre>
 					</div>
@@ -265,7 +265,7 @@
 		</a>
 		</footer>
 	</main>
-	
+
 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 	<script src="dist/zoomove.min.js"></script>
@@ -275,7 +275,7 @@
 				cursor: 'true',
 				scale: '1.2',
 			});
-  
+
 		  var shareButtons = document.querySelectorAll(".share-btn");
 
 		  if (shareButtons) {
