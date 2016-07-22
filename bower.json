@@ -19,8 +19,12 @@
     "hover",
     "mouseover",
     "jquery",
+    "jquery-plugin",
     "javascript",
-    "image"
+    "js",
+    "image",
+    "img",
+    "imagem"
   ],
   "moduleType": [],
   "ignore": [
