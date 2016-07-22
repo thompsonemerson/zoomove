@@ -18,24 +18,25 @@
 
         this
             .each(function(){
+                var thisZoo = $(this); // cache current jquery zoo element
 
                 // if over exist and over true
-                if($(this).attr('data-zoo-over')) { zoo.overD = $(this).attr('data-zoo-over'); }
+                if(thisZoo.attr('data-zoo-over')) { zoo.overD = thisZoo.attr('data-zoo-over'); }
                     else{ zoo.overD = zoo.over; }
 
                 if(zoo.overD === 'true'){
-                    $(this).css({
+                    thisZoo.css({
                         'overflow': 'visible',
                         'z-index': '100'
                     });
                 }
 
                 // if image exist
-                if($(this).attr('data-zoo-image')) { zoo.imageD = $(this).attr('data-zoo-image'); }
+                if(thisZoo.attr('data-zoo-image')) { zoo.imageD = thisZoo.attr('data-zoo-image'); }
                     else{ zoo.imageD = zoo.image; }
 
                 // create image element background
-                $(this)
+                thisZoo
                     .append('<div class="zoo-img"></div>')
                     .children('.zoo-img')
                         .css({
@@ -45,18 +46,19 @@
             })
 
             .on('mouseover', function(e){
+                var thisZoo = $(this); // cache current jquery zoo element
                 e.preventDefault();
 
                 // if scale exist
-                if($(this).attr('data-zoo-scale')) { zoo.scaleD = $(this).attr('data-zoo-scale'); }
+                if(thisZoo.attr('data-zoo-scale')) { zoo.scaleD = thisZoo.attr('data-zoo-scale'); }
                     else{ zoo.scaleD = zoo.scale; }
 
                 // if move exist
-                if($(this).attr('data-zoo-move')) { zoo.moveD = $(this).attr('data-zoo-move'); }
+                if(thisZoo.attr('data-zoo-move')) { zoo.moveD = thisZoo.attr('data-zoo-move'); }
                     else{ zoo.moveD = zoo.move; }
 
                 // change scale
-                $(this)
+                thisZoo
                     .children('.zoo-img')
                         .css({
                             'transform': 'scale('+ zoo.scaleD +')'
@@ -64,26 +66,28 @@
             })
 
             .on('mousemove', function(e){
+                var thisZoo = $(this); // cache current jquery zoo element
                 e.preventDefault();
 
                 // if move true
                 if(zoo.moveD === 'true') {
                     // change image position with mouse move
-                    $(this)
+                    thisZoo
                         .children('.zoo-img')
                             .css({
                                 'transform-origin':
-                                    ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' +
-                                    ((e.pageY - $(this).offset().top) / $(this).height()) * 100 + '%'
+                                    ((e.pageX - thisZoo.offset().left) / thisZoo.width()) * 100 + '% ' +
+                                    ((e.pageY - thisZoo.offset().top) / thisZoo.height()) * 100 + '%'
                             });
                 }
             })
 
             .on('mouseout', function(e){
+                var thisZoo = $(this); // cache current jquery zoo element
                 e.preventDefault();
 
                 // return initial scale
-                $(this)
+                thisZoo
                     .children('.zoo-img')
                         .css({
                             'transform': 'scale(1)'
