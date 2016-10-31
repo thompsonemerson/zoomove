@@ -1,5 +1,6 @@
 # ZooMove | jQuery Zoom Image
 
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://thompsonemerson.github.io/zoomove)
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](http://thompsonemerson.mit-license.org/)
 [![Build Status](https://travis-ci.org/thompsonemerson/zoomove.svg?branch=master)](https://travis-ci.org/thompsonemerson/zoomove)
 [![GitHub version](https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg)](https://badge.fury.io/gh/thompsonemerson%2Fzoomove)
