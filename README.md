@@ -22,16 +22,27 @@
 
 ## Install
 
-Get with npm.
+Get with npm
 
-```
+```bash
 $ npm install zoomove --save
 ```
 
-Or bower.
+bower
 
-```
+```bash
 $ bower install zoomove --save
+```
+
+
+Or CDN (by [cdnjs](https://cdnjs.com/))
+
+```html
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.css">
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>
 ```
 
 If you prefer you can just [download a ZIP](https://github.com/thompsonemerson/zoomove/archive/master.zip) file.
