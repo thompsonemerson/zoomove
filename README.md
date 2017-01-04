@@ -147,9 +147,9 @@ Now says it is not easy?! ;)
 
 ## Browser Support
 
-| ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png) |
-|:---:|:---:|:---:|:---:|:---:|
-| 42+ ✔ | 41+ ✔ | 9+ ✔ | 29+ ✔ | 9+ ✔ |
+| <img src="http://emersonthompson.com.br/assets/img/chrome.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://emersonthompson.com.br/assets/img/firefox.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://emersonthompson.com.br/assets/img/ie.png" width="48px" height="48px" alt="IE logo"> | <img src="http://emersonthompson.com.br/assets/img/opera.png" width="48px" height="48px" alt="Opera logo"> | <img src="http://emersonthompson.com.br/assets/img/safari.png" width="48px" height="48px" alt="Safari logo"> | <img src="http://emersonthompson.com.br/assets/img/edge.png" width="48px" height="48px" alt="Edge logo"> |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 42+ ✔ | 41+ ✔ | 9+ ✔ | 29+ ✔ | 9+ ✔ | 12+ ✔ |
 
 
 ## Contributing
