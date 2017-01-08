@@ -34,6 +34,11 @@ bower
 $ bower install zoomove --save
 ```
 
+yarn
+
+```bash
+$ yarn install zoomove
+```
 
 Or CDN (by [cdnjs](https://cdnjs.com/))
 
