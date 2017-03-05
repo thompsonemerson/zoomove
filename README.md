@@ -6,6 +6,7 @@
 [![GitHub version](https://badge.fury.io/gh/thompsonemerson%2Fzoomove.svg)](https://badge.fury.io/gh/thompsonemerson%2Fzoomove)
 [![Bower version](https://badge.fury.io/bo/zoomove.svg)](https://badge.fury.io/bo/zoomove)
 [![npm version](https://badge.fury.io/js/zoomove.svg)](http://badge.fury.io/js/zoomove)
+[![CDNJS version](https://img.shields.io/cdnjs/v/zoomove.svg)](https://cdnjs.com/libraries/zoomove)
 
 > It's a plugin developed with jQuery, that allows to dynamically zoom images with mouseover, and view details with mouse move.
 
