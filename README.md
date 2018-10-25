@@ -153,7 +153,7 @@ Now says it is not easy?! ;)
 
 ## Browser Support
 
-| <img src="http://emersonthompson.com.br/assets/img/chrome.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://emersonthompson.com.br/assets/img/firefox.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://emersonthompson.com.br/assets/img/ie.png" width="48px" height="48px" alt="IE logo"> | <img src="http://emersonthompson.com.br/assets/img/opera.png" width="48px" height="48px" alt="Opera logo"> | <img src="http://emersonthompson.com.br/assets/img/safari.png" width="48px" height="48px" alt="Safari logo"> | <img src="http://emersonthompson.com.br/assets/img/edge.png" width="48px" height="48px" alt="Edge logo"> |
+| <img src="http://i.imgur.com/luDsuvw.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://i.imgur.com/puSpCj0.png" width="48px" height="48px" alt="Firefox logo"> | <img src="https://i.imgur.com/PrDuPeI.png" width="48px" height="48px" alt="IE logo"> | <img src="https://i.imgur.com/nhAH49O.png" width="48px" height="48px" alt="Opera logo"> | <img src="https://i.imgur.com/GpMpdFE.png" width="48px" height="48px" alt="Safari logo"> | <img src="https://i.imgur.com/4zSy2WO.png" width="48px" height="48px" alt="Edge logo"> |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | 42+ ✔ | 41+ ✔ | 9+ ✔ | 29+ ✔ | 9+ ✔ | 12+ ✔ |
 
