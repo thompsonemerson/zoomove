@@ -87,6 +87,9 @@ Temporary Items
 .sass-cache/
 
 
+### Map ###
+*.map
+
 ### SublimeText ###
 # cache files for sublime text
 *.tmlanguage.cache

@@ -6,7 +6,7 @@
   "homepage": "http://thompsonemerson.github.io/zoomove",
   "repository": "https://github.com/thompsonemerson/zoomove",
   "author": "Emerson Thompson <thompson.emerson@gmail.com>",
-  "license": "http://thompsonemerson.mit-license.org",
+  "license": "MIT",
   "keywords": [
     "zoomove",
     "zoom",
@@ -29,7 +29,6 @@
     ".travis.yml",
     "component.json",
     "bower.json",
-    "gruntfile.js",
     "src"
   ],
   "dependencies": {
@@ -37,23 +36,34 @@
     "jquery": "latest"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^3.0.3",
-    "grunt-contrib-clean": "^0.7.0",
-    "grunt-contrib-sass": "~0.8.1",
-    "grunt-contrib-uglify": "^0.8.1",
-    "grunt-contrib-jshint": "^0.11.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-newer": "^1.1.1",
-    "grunt-notify": "^0.4.3",
-    "load-grunt-tasks": "^3.3.0",
-    "time-grunt": "^1.2.2"
+    "autoprefixer": "^9.6.1",
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.2",
+    "babel-plugin-transform-es2015-modules-umd": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babelify": "^7.2.0",
+    "banner-cli": "^0.14.0",
+    "bannerify": "Vekat/bannerify#feature-option",
+    "browserify": "^13.0.0",
+    "concurrently": "^4.1.1",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.3",
+    "uglify-js": "^2.4.24",
+    "watchify": "^3.4.0"
   },
   "engines": {
     "node": ">=0.12.0"
   },
   "scripts": {
-    "start": "grunt",
-    "test": "grunt build"
+    "build": "npm run js && npm run css",
+    "browserify": "browserify src/js/zoomove.js -s ZooMove -t [babelify] -o dist/zoomove.js && banner-cli dist/*.js",
+		"uglifyjs": "uglifyjs dist/zoomove.js --comments '/!/' -m screw_ie8=true -c screw_ie8=true,unused=false -o dist/zoomove.min.js",
+		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
+    "css": "node-sass --output-style expanded src/css/zoomove.sass dist/zoomove.css && banner-cli dist/*.css && node-sass --output-style compressed src/css/zoomove.sass dist/zoomove.min.css && npm run autoprefixer && banner-cli dist/*.min.css",
+    "css:watch": "node-sass src/css/zoomove.sass -wo dist",
+    "js": "npm run browserify && npm run uglifyjs",
+    "js:watch": "watchify src/js/zoomove.js -s ZooMove -t [babelify] -o dist/zoomove.js -v",
+    "dev": "concurrently --kill-others \"npm run js:watch\" \"npm run css:watch\"",
+    "prepublish": "npm run build"
   }
 }
