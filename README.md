@@ -45,10 +45,10 @@ Or CDN (by [cdnjs](https://cdnjs.com/))
 
 ```html
 <!-- CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.3.0/zoomove.min.css">
 
 <!-- JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.3.0/zoomove.min.js"></script>
 ```
 
 If you prefer you can just [download a ZIP](https://github.com/thompsonemerson/zoomove/archive/master.zip) file.
@@ -93,7 +93,7 @@ Now says it is not easy?! ;)
 | data-zoo-move      | true            | Choose whether the image should move with the mouse move.            |
 | data-zoo-over      | false           | With 'over' it is possible to define whether the image may be above. |
 | data-zoo-cursor    | false           | Define the cursor pointer or default.                                |
-| data-zoo-autosize  | true            | sets the size of the automatic image.                                |
+| data-zoo-autosize  | true            | Sets the size of the automatic image.                                |
 
 ```html
 <!-- HTML Element -->
