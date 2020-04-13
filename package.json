@@ -57,13 +57,14 @@
   "scripts": {
     "build": "npm run js && npm run css",
     "browserify": "browserify src/js/zoomove.js -s ZooMove -t [babelify] -o dist/zoomove.js && banner-cli dist/*.js",
-		"uglifyjs": "uglifyjs dist/zoomove.js --comments '/!/' -m screw_ie8=true -c screw_ie8=true,unused=false -o dist/zoomove.min.js",
-		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
+    "uglifyjs": "uglifyjs dist/zoomove.js --comments '/!/' -m screw_ie8=true -c screw_ie8=true,unused=false -o dist/zoomove.min.js",
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
     "css": "node-sass --output-style expanded src/css/zoomove.sass dist/zoomove.css && banner-cli dist/*.css && node-sass --output-style compressed src/css/zoomove.sass dist/zoomove.min.css && npm run autoprefixer && banner-cli dist/*.min.css",
     "css:watch": "node-sass src/css/zoomove.sass -wo dist",
     "js": "npm run browserify && npm run uglifyjs",
     "js:watch": "watchify src/js/zoomove.js -s ZooMove -t [babelify] -o dist/zoomove.js -v",
     "dev": "concurrently --kill-others \"npm run js:watch\" \"npm run css:watch\"",
-    "prepublish": "npm run build"
+		"prepublish": "npm run build",
+		"test": "echo \"no test specified\""
   }
 }

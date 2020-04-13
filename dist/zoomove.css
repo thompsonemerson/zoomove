@@ -2,7 +2,7 @@
   * Zoomove v1.2.1
   * http://thompsonemerson.github.io/zoomove
   *
-  * Copyright (c) 2019 Emerson Thompson
+  * Copyright (c) 2016 Emerson Thompson
   * Licensed under the MIT license
  */
 
