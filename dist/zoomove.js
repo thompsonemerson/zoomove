@@ -1,5 +1,5 @@
 /*!
-  * Zoomove v1.2.1
+  * Zoomove v1.3.0
   * http://thompsonemerson.github.io/zoomove
   *
   * Copyright (c) 2016 Emerson Thompson
@@ -32,7 +32,8 @@
                 cursor: 'false',
                 scale: '1.5',
                 move: 'true',
-                over: 'false'
+                over: 'false',
+                autosize: 'true'
             }, options);
 
             // cursor config
@@ -67,6 +68,23 @@
                     zoo.imageD = thisZoo.attr('data-zoo-image');
                 } else {
                     zoo.imageD = zoo.image;
+                }
+
+                // if autosize exist
+                if (thisZoo.attr('data-zoo-autosize')) {
+                    zoo.autosizeD = thisZoo.attr('data-zoo-autosize');
+                } else {
+                    zoo.autosizeD = zoo.autosize;
+                }
+
+                if (zoo.autosizeD === 'true') {
+                    $('<img/>', {
+                        load: function load() {
+                            thisZoo.css('width', this.width + 'px');
+                            thisZoo.css('height', this.height + 'px');
+                        },
+                        src: zoo.imageD
+                    });
                 }
 
                 // create image element background

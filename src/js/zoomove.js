@@ -8,13 +8,14 @@
             cursor: 'false',
             scale: '1.5',
             move: 'true',
-            over: 'false'
+						over: 'false',
+						autosize: 'true'
         }, options );
 
         // cursor config
         if($(this).attr('data-zoo-cursor')) { zoo.cursor = $(this).attr('data-zoo-cursor'); }
         if(zoo.cursor === 'true') { zoo.cursor = 'pointer'; }
-        else{ zoo.cursor = 'default'; }
+				else{ zoo.cursor = 'default'; }
 
         this
             .each(function(){
@@ -33,7 +34,21 @@
 
                 // if image exist
                 if(thisZoo.attr('data-zoo-image')) { zoo.imageD = thisZoo.attr('data-zoo-image'); }
-                    else{ zoo.imageD = zoo.image; }
+										else{ zoo.imageD = zoo.image; }
+
+								// if autosize exist
+								if(thisZoo.attr('data-zoo-autosize')) { zoo.autosizeD = thisZoo.attr('data-zoo-autosize'); }
+										else{ zoo.autosizeD = zoo.autosize; }
+
+								if(zoo.autosizeD === 'true') {
+									$('<img/>',{
+											load: function(){
+													thisZoo.css('width', this.width + 'px')
+													thisZoo.css('height', this.height + 'px')
+											},
+											src: zoo.imageD
+									});
+								}
 
                 // create image element background
                 thisZoo

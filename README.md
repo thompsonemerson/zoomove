@@ -88,11 +88,12 @@ Now says it is not easy?! ;)
 
 | Property  | Default  | Description |
 | :------------ |:---------------:| :-----|
-| data-zoo-image     | -               | The url of the photo to be displayed.                   |
+| data-zoo-image     | -               | The url of the photo to be displayed.                   							|
 | data-zoo-scale     | 1.5 (150%)      | Sets the zoom size that should be applied to the image.              |
 | data-zoo-move      | true            | Choose whether the image should move with the mouse move.            |
-| data-zoo-over      |  false           |  With 'over' it is possible to define whether the image may be above. |
-| data-zoo-cursor    | false            | Define the cursor pointer or default.                                |
+| data-zoo-over      | false           | With 'over' it is possible to define whether the image may be above. |
+| data-zoo-cursor    | false           | Define the cursor pointer or default.                                |
+| data-zoo-autosize  | true            | sets the size of the automatic image.                                |
 
 ```html
 <!-- HTML Element -->
@@ -103,6 +104,7 @@ Now says it is not easy?! ;)
   data-zoo-move="[value]"
   data-zoo-over="[value]"
   data-zoo-cursor="[value]"
+  data-zoo-autosize="[value]"
   >
 </figure>
 ```
@@ -115,7 +117,8 @@ Now says it is not easy?! ;)
        scale: '[value]',
        move: '[value]',
        over: '[value]',
-       cursor: '[value]'
+       cursor: '[value]',
+       autosize: '[value]'
    });
 </script>
 <!-- Thus it is applied universally -->
