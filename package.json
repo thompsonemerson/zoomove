@@ -46,7 +46,7 @@
     "bannerify": "Vekat/bannerify#feature-option",
     "browserify": "^13.0.0",
     "concurrently": "^4.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "postcss-cli": "^6.1.3",
     "uglify-js": "^2.4.24",
     "watchify": "^3.4.0"
